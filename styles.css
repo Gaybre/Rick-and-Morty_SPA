@@ -6,7 +6,7 @@ body {
   background-color: #f4f4f4;
   color: #3c484e;
   font-family: 'Open Sans', sans-serif;
-  background-image: url('../../src/images/wldd.png');
+  background-image: url('https://i.pinimg.com/originals/ee/ef/24/eeef24edb0cd24ae95ec7576ff04aae9.png');
   background-attachment: fixed;
   /*cd /mnt/c*/
 }
@@ -118,19 +118,18 @@ body {
 }
 
 .error404 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background-color: #252525;
+  background-image: url('https://i.pinimg.com/originals/8f/2a/ec/8f2aecd39cc2e5f4853e0535f4b02a81.png');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right;
   height: 50vh;
 }
 .errorText {
   color: white;
   font-size: 40px;
-  margin-left: 40%;
-}
-.portal {
-  height: 100%;
+  text-align: center;
+  padding-top: 10%;
 }
 
 @keyframes fade {
@@ -172,5 +171,8 @@ body {
   }
   .logo:hover ~.hide {
     display: none;
+  }
+  .error404 {
+    background-size: 100%;
   }
 }
