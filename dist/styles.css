@@ -6,14 +6,13 @@ body {
   background-color: #f4f4f4;
   color: #3c484e;
   font-family: 'Open Sans', sans-serif;
+  background-image: url('../../wldd1.jpg');
 }
 
 .header-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #026C86;
-  margin-bottom: 500px;
 }
 
 .header a {

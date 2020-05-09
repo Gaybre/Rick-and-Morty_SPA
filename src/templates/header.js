@@ -4,7 +4,8 @@ const Header = ()=> {
             <div class="header-logo">
                 <h1>
                     <a href="/">
-                        100tifi.co
+                        <img src="../../src/images/rick.png" alt="logo" class="logo">
+                        <span class=hide>100tifi.co</span>
                     </a>
                 </h1>
             </div>
