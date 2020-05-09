@@ -117,6 +117,22 @@ body {
   color: #026C86;
 }
 
+.error404 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #252525;
+  height: 50vh;
+}
+.errorText {
+  color: white;
+  font-size: 40px;
+  margin-left: 40%;
+}
+.portal {
+  height: 100%;
+}
+
 @keyframes fade {
   from {
     opacity: 0;
@@ -139,6 +155,8 @@ body {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+
 
 @media screen and (max-width: 780px) {
   .characters-inner {

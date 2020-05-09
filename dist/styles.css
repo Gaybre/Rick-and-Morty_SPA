@@ -6,12 +6,15 @@ body {
   background-color: #f4f4f4;
   color: #3c484e;
   font-family: 'Open Sans', sans-serif;
-  background-image: url('../../wldd1.jpg');
+  background-image: url('../../src/images/wldd.png');
+  background-attachment: fixed;
+  /*cd /mnt/c*/
 }
 
 .header-main {
   display: flex;
   justify-content: space-between;
+  padding: 0 20px;
   align-items: center;
 }
 
@@ -19,12 +22,27 @@ body {
   text-decoration: none;
   color: #15302C;
 }
+.hide {
+  display: none;
+}
+.logo {
+  width: 80px;
+}
+.logo:hover ~.hide {
+  display: inline-block;
+}
 
 .main {
-  padding: 10px;
+  margin: 0 100px;
+  /*padding: 10px;*/
   grid-template-columns: minmax(auto, 976px);
   display: grid;
   justify-content: center;
+  background-color: white;
+}
+
+#content {
+  padding: 10px;
 }
 
 .characters {
@@ -99,6 +117,22 @@ body {
   color: #026C86;
 }
 
+.error404 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #252525;
+  height: 50vh;
+}
+.errorText {
+  color: white;
+  font-size: 40px;
+  margin-left: 40%;
+}
+.portal {
+  height: 100%;
+}
+
 @keyframes fade {
   from {
     opacity: 0;
@@ -120,4 +154,23 @@ body {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+
+
+@media screen and (max-width: 780px) {
+  .characters-inner {
+    grid-template: auto auto / 80%;
+    justify-content: center;
+  }
+  .characters {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-image {
+    width: 50%;
+    justify-self: center;
+  }
+  .logo:hover ~.hide {
+    display: none;
+  }
 }
